@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Logistics</title>
+    <link rel="stylesheet" href="log.css">
+    <script>
+        function clicked(){
+            alert("Under Development")
+        }
+        function clicked1(){
+            n = document.getElementById("namehold").value
+            p = document.getElementById("phonehold").value
+            q = document.getElementById("queryhold").value
+            if (n == '' || p == '' || q == ''){
+                alert("Fields Mandatory")
+            }
+            else{
+            alert("Successfully Submitted")
+            }
+            document.getElementById("namehold").value = ''
+            document.getElementById("phonehold").value = ''
+            document.getElementById("queryhold").value = ''
+    }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <img src="p.png" id="logo" onclick="clicked()">
+        <span id="home" onclick="clicked()">Home</span>
+        <span id="price" onclick="clicked()">Pricing</span>
+        <span id="about" onclick="clicked()">About Us</span>
+        <ul>
+            <li><span id="title">Premium Logistics</span></li>
+            <li><span id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt quasi, quod laudantium quis tempore illum? Est itaque, aliquam, doloribus ipsum dolorum sit quia officia vitae fugit ullam aliquid modi totam. Eveniet, aut rerum.</span>
+            </li>
+        </ul>
+        <img src="logis.jpg" id="img1">
+    </div>
+    <div id="goto">
+        <ul id="secondul">
+            <a href="#main"><li id="mainlist2"></li></a>
+            <a href="#secondpg"><li id="secondpglist2"></li></a>
+            <a href="#cont"><li id="contlist2"></li></a>
+        </ul>
+    </div>
+    <div id="secondpg">
+        <span id="sec" onclick="clicked()">SECTION CONTENT</span>
+        <img src="h.png" id="homeicon" onclick="clicked()">
+        <span id="hometxt" onclick="clicked()">Home</span>
+        <img src="d.png" id="priceicon" onclick="clicked()">
+        <span id="pricetxt" onclick="clicked()">Pricing</span>
+        <img src="a.png" id="aicon" onclick="clicked()">
+        <span id="atxt" onclick="clicked()">About Us</span>
+        <div id="goto2">
+            <ul id="thirdul">
+                <a href="#main"><li id="mainlist3"></li></a>
+                <a href="#secondpg"><li id="secondpglist3"></li></a>
+                <a href="#cont"><li id="contlist3"></li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="cont">
+        <span id="con">CONTACT US</span>
+        <div id="rec">
+            <input type="text" id="namehold" placeholder="Enter Name">
+            <input type="number" id="phonehold" placeholder="Enter Phone Number">
+            <input type="text" id="queryhold" placeholder="Enter Query">
+            <button id="submit" onclick="clicked1()">SUBMIT</button>
+            <div id="goto2">
+                <ul id="fourthul">
+                    <a href="#main"><li id="mainlist4"></li></a>
+                    <a href="#secondpg"><li id="secondpglist4"></li></a>
+                    <a href="#cont"><li id="contlist4"></li></a>
+                </ul>
+            </div>
+        </div>
+        <footer id="foot">
+            <span id="tag"> Made With &#10084; by Jay Shah </span>        
+            <a href="https://www.instagram.com/codechefvit/"><img src="ins.png" id="insta"></a>
+            <a href="https://www.facebook.com/codechefvit/"><img src="fac.png" id="face"></a>
+        </footer>
+    </div>
+</body>
+</html>
